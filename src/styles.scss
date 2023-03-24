@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'apercu-regular';
+  src: url('./assets/fonts/Apercu\ Regular.otf');
+}
+
+@font-face {
+  font-family: 'apercu-light';
+  src: url('./assets/fonts/Apercu\ Light.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'apercu-light', sans-serif;
+}
