@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## What how made
+## How was made it
 Se realiza maqueta versión responsive, se añade estilos de fuente a nivel global, se crea también carpeta para imágenes,
 Utiliza un routing para que todos los paths redirijan al home. 
 En App se crean componentes necesarios para la maqueta.
