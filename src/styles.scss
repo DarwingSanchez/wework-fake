@@ -9,9 +9,35 @@
   src: url('./assets/fonts/Apercu\ Light.otf');
 }
 
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'apercu-light', sans-serif;
+}
+
+.whatssap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0.96px 0.96px 2px gray;
+  box-shadow: 0.96px 0.96px 2px gray;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 3.125rem;
+  font-size: 1.875rem;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  text-align: center;
+  z-index: 1000;
+  img {
+    width: 62%;
+  }
 }

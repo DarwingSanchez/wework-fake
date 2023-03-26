@@ -1,1 +1,37 @@
-<p>home works!</p>
+<section class="home-container">
+  <section class="home-hero">
+    <!-- Text on mobile -->
+    <section class="home-hero-mobile-text">
+      <h1>Para todas tus formas de trabajo, estamos aquí</h1>
+    </section>
+    <!-- Form -->
+    <section class="home-hero__left-container">
+      <form #findSpaceForm="ngForm" class="home-hero__form-segmentation" (ngSubmit)="onFindSpaces(findSpaceForm)">
+        <div class="main-city-container">
+          <div class="container-selecter">
+            <label class="container-selecter-label" for="">
+              Encuentra espacio de trabajo en
+            </label>
+            <img class="location-img" src="./assets/img/location.png" alt="location">
+            <select name="city" id="city">
+              <option value="elegir" selected>Elegir una ubicación</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit">Comenzar</button>
+      </form>
+    </section>
+    <!-- Swipper -->
+    <section class="home-hero_right-container">
+      <swiper [config]="mySwiper" class="swiper">
+        <ng-template swiperSlide *ngFor="let banner of bannerList">
+          <img class="principal-banner" [src]="banner" alt="Principal banner">
+        </ng-template>
+      </swiper>
+    </section>
+  </section>
+  <app-looking-for [listLooking]="lookingData"></app-looking-for>
+  <app-news-one [informationList]="newsOneInformation"></app-news-one>
+</section>
+
+

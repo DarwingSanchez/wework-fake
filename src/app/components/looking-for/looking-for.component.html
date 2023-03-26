@@ -1,0 +1,17 @@
+<section class="looking-for-container" *ngIf="listLooking" >
+  <h3>¿Qué estás buscando?</h3>
+  <div class="looking" *ngFor="let item of listLooking">
+    <img class="looking-img" [src]="item.img" alt="">
+    <div class="looking-info">
+      <p class="looking-info-title">{{item.title}}</p>
+      <p class="looking-info-description">{{item.description}}</p>
+      <div class="looking-many-people-container">
+        <img src="./assets/img/capacity.png" alt="capacity icon">
+        {{item.manyPeople}}
+      </div>
+    </div>
+  </div>
+  <a class="solutions" href="https://www.wework.com/es-LA/solutions">
+    Ver todas las soluciones
+  </a>
+</section>

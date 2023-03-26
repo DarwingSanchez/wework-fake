@@ -1,1 +1,16 @@
-<p>footer works!</p>
+<section class="footer">
+  <div class="icons-footer">
+    <img src="./assets/img/facebook.png" alt="fb">
+    <img src="./assets/img/instagram.png" alt="insta">
+    <img src="./assets/img/twitter.png" alt="twitter">
+    <img src="./assets/img/linkedin.png" alt="linkedin">
+  </div>
+  <section class="footer-links-section">
+    <section class="link-section" *ngFor="let section of footerList">
+      <p class="link-section-title">{{section.title}}</p>
+      <ul>
+        <li *ngFor="let item of section.navOptions"><a [href]="item.hrf">{{item.text}}</a></li>
+      </ul>
+    </section>
+  </section>
+</section>

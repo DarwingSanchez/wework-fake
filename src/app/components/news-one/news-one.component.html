@@ -1,0 +1,25 @@
+<section class="news-one-container" *ngIf="informationList.length > 0">
+  <div class="news-container"
+    [ngClass]="{'news-container-additional' : item.additionalLink}"
+    *ngFor="let item of informationList"
+  >
+    <div class="img-container" [ngClass]="{'news-img-bottom' : item.initialPrice}">
+      <img [src]="item.information.img" alt="">
+    </div>
+    <div class="news-info">
+      <div class="initail-price-container" *ngIf="item.initialPrice">
+        <p>PRECIO INICIAL</p>
+      </div>
+      <h2 [ngClass]="{'news-title-price' : item.initialPrice}">{{item.information.title}}</h2>
+      <div class="additional-info-container" *ngIf="item.additionalLink">
+        <p>{{item.additionalLink}}</p>
+      </div>
+      <p class="news-description" [ngClass]="{'description-additional' : item.additionalLink}">
+        {{item.information.description}}
+      </p>
+      <a href="https://www.wework.com/es-LA/solutions/wework-all-access" [ngClass]="{'more-info-no-arrow' : item.additionalLink}">
+        Obtén más información
+      </a>
+    </div>
+  </div>
+</section>
