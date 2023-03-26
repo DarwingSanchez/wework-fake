@@ -7,8 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class NewsOneComponent {
 
-  @Input() initialPrice: boolean = false
-  @Input() additionalLink: string = 'Hola Mundo'
+  /** List for rendering */
   @Input() informationList: any[] = []
 
 }

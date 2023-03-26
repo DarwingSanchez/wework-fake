@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  /** For quick links, base URL */
   private host = 'https://wework.com/es-LA'
 
+  /** Quick links footer data information */
   public footerList = [
     {
       title: 'EMPRESA',

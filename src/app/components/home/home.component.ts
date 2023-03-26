@@ -19,6 +19,7 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 export class HomeComponent {
 
+  /** Carrousel options */
   public mySwiper: SwiperOptions = {
     slidesPerView: 1,
     spaceBetween: 8,
@@ -28,6 +29,7 @@ export class HomeComponent {
     direction: 'horizontal'
   };
 
+  /** Carrousel banners */
   public bannerList = [
     "./assets/img/web5.jpg",
     "./assets/img/web1.jpg",
@@ -36,6 +38,7 @@ export class HomeComponent {
     "./assets/img/web4.jpg",
   ]
 
+  /** Data for rendering into looking-for component */
   public lookingData = [
     {
       title: 'Membresía de coworking',
@@ -63,6 +66,7 @@ export class HomeComponent {
     }
   ]
 
+  /** Data for rendering into news section component */
   public newsOneInformation = [
     {
       initialPrice: true,
@@ -84,7 +88,10 @@ export class HomeComponent {
     }
   ]
 
-  onFindSpaces(event: NgForm) {
-
-  }
+  /**
+   * Function will search for places available in
+   * city selected by user.
+   * @param event | NgForm
+   */
+  onFindSpaces(event: NgForm) { /** */ }
 }
